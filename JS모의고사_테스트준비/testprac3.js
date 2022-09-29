@@ -1,4 +1,5 @@
-//배열에서 중복되는 단어를 지운 후에 남은 단어들을 반환할 때는 각 문자열의 인덱스 n 번째 글자를 기준으로 오름차순 정렬
+//배열에서 중복되는 단어를 지운 후에 남은 단어들을 반환할 때는 
+//각 문자열의 인덱스 n 번째 글자를 기준으로 오름차순 정렬
 
 // function solution(arr,n) {
 //     let dupl = arr.filter((item, index) => arr.indexOf(item) !== index)
