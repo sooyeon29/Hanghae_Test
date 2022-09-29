@@ -28,3 +28,20 @@ let arr1=[1,3,5,9,2,4,8,0];
 console.log(solution(arr1))
 console.log(solution([1,2,4,6,7,8,9,0]))
 console.log(solution([7,8,3,5,6,1,2,4]))
+
+
+//=====================다른풀이=============================
+function solution(checkin) {
+    let answer = []
+    let sum = 0
+    for(let i = 0; i < 10; i++) {
+      if (!checkin.includes(i)) {
+        answer.push(i)
+      }
+    }
+    sum = answer.reduce((a,b) => { return (a+b)*(Math.abs(b-a)+1)/2 })
+    return sum
+  }
+  
+  let checkin=[7,8,3,5,6,1,2,4];
+  console.log(solution(checkin))
